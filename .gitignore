@@ -1,3 +1,8 @@
+## Unneeded .bib files from Mendeley
+Dippa-*
+Kandi.bib
+tex/library.bib
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

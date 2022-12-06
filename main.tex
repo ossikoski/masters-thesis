@@ -51,7 +51,7 @@
 %programs - if you wish to display code snippets
 % Example: \documentclass[english, authoryear]{tauthesis}
 %          thesis in English with author-year citations
-\documentclass[finnish, numeric]{tauthesis}  % draft -> kuvat ei lataudu
+\documentclass[english, numeric, draft]{tauthesis}  % draft -> kuvat ei lataudu
 
 % The glossaries package throws a warning:
 % No language module detected for 'Finnish'.
@@ -65,7 +65,7 @@
 % the document! This can dramatically reduce
 % compilation time.
 
-\usepackage{todonotes}
+\usepackage[textsize=tiny]{todonotes}
 % Add [disable]{todonotes} to remove todonotes and remove the setlength'
 
 \usepackage{hyphenat}
@@ -140,7 +140,7 @@
 
 %%%%% in citation information.
 
-\addbibresource{tex/library.bib}
+\addbibresource{tex/Dippa.bib}
 \emergencystretch=2em
 
 \begin{document}
@@ -169,7 +169,7 @@
 % e.g. Examiners or Tarkastajat, and <name>s are
 % replaced by the examiner names, each on their
 % separate line.
-\examiner[Tarkastaja]{Tarkastajan nimi}
+\examiner[Examiner]{Tarkastajan nimi}
 
 % The finishing date of the thesis (YYYY-MM-DD).
 \finishdate{2022}{10}{24}
@@ -177,13 +177,13 @@
 % The type of the thesis (e.g. Kandidaatintyö
 % or Master of Science Thesis) in the primary
 % and the secondary languages of the thesis.
-\thesistype{Diplomityö}{Master of Science Thesis}
+\thesistype{Master of Science Thesis}
 
 % The faculty and degree programme names in
 % the primary and the secondary languages
 % of the thesis.
-\facultyname{Tekniikan ja luonnontieteiden tiedekunta}{Faculty of Engineering and Natural Sciences}
-\programmename{Teknisten tieteiden kandidaatin tutkinto-ohjelma}{Bachelor's Programme in Engineering Sciences}
+\facultyname{Faculty of Engineering and Natural Sciences}{}
+\programmename{Master's Programme in Automation Engineering}{Automaatiotekniikan DI-ohjelma}
 
 % The keywords to the thesis in the primary
 % and the secondary languages of the thesis.
@@ -202,9 +202,8 @@
 % first abstract. The second argument of
 % the \preface command takes the place where
 % the thesis was signed in.
-\abstract{tex/tiivistelma.tex}
-\otherabstract{tex/abstract.tex}
-\preface{tex/alkusanat.tex}{Tampereella}
+\abstract{tex/abstract.tex}
+\preface{tex/alkusanat.tex}{Tampere}
 
 %%%%% Table of contents.
 
@@ -235,12 +234,24 @@
 % the chapters and their files as descriptive
 % names as possible.
 
-\chapter{Johdanto}
-\label{ch:johdanto}
+\chapter{Introduction}
+\label{ch:introduction}
 \input{tex/johdanto.tex}
 
-\chapter{Yhteenveto}
-\label{ch:yhteenveto}
+\chapter{The Theoretical Framework}
+\label{ch:theoretical_framework}
+\input{tex/chapter2.tex}
+
+\section{Internet of Things}
+\label{ch:iot}
+\input{tex/iot.tex}
+
+\section{IoT-TICKET}
+\label{ch:iot-ticket}
+\input{tex/iot-ticket.tex}
+
+\chapter{Summary}
+\label{ch:summary}
 \input{tex/yhteenveto.tex}
 
 

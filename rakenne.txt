@@ -1,0 +1,29 @@
+1. Introduction
+
+2. The Theoretical Framework
+2.1 Internet of Things
+2.2 IoT-TICKET
+2.3 Data Analytics
+2.4 Azure DataBricks
+2.5 Data Analytics Suite
+2.5.1 Use cases and requirements in the start
+2.5.2 SDK base structure
+2.5.3 Auto-generated client
+2.6 User experience and Usability
+
+3. Methods for analysis
+3.1 User experience
+3.2 Usability
+3.3 Project structure
+
+4. Analysis
+4.1 Usage demonstration
+4.2
+
+5. Results
+5.1 User experience and usage
+5.2 Project structure
+5.2.1 Auto-generated client
+-pros and cons ?
+
+6. Summary
